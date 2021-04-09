@@ -1,0 +1,43 @@
+function twice(f, v) {
+  return f(f(v));
+}
+
+function myAdd(v) {
+  return v + 3;
+}
+
+const result = twice(myAdd, 1);
+console.log(result);
+
+
+const CCompA = lazy(() => import('./CompA'));
+
+ {/* <h1>Anurag is enjoying react</h1>
+        <br />
+        <Parthiban />
+        <br></br>
+        <Shankar />
+        <br />
+        
+        <br />
+        <SecComp h={'Balasubramanyam'} arr={['Gayatri', 'Geeta', 'Gunvati', 'Mikila', 'Marium']} />
+        <br />
+        <ThirdComp /> */}
+        {/* <br />
+        <NComp a={'Click me from Parent'} /> */}
+
+        {/* <MyComponent /> */}
+        {/* <Welcome user={'Arzu'} /> */}
+
+        {/* <FirstComp /> */}
+        <Provider store={Store}>
+          <BooksContainer />
+        </Provider>
+        <Suspense fallback={<div>Loading...</div>}>
+
+          <Router>
+            <Switch>
+              <Route path="/compa" component={CCompA} />
+            </Switch>
+          </Router>
+        </Suspense>
